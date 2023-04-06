@@ -14,7 +14,7 @@ text = st.text_area("Metni girin", value='', height=200)
 # Çeviriyi gerçekleştirin
 if st.button("Çevir"):
     if text:
-        translated_text = pipe(text)[0]['translation_text]
+        translated_text = pipe(text)[0]['translation_text']
         st.write("Çeviri Sonucu:")
         st.write(translated_text)
     else:
