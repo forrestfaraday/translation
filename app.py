@@ -4,7 +4,7 @@ from transformers import MarianMTModel, MarianTokenizer, pipeline
 # Opus-MT modeli için tokenizer ve modeli yükleyin
 tokenizer = MarianTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-es")
 model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-en-es")
-pipe = pipeline("translation_en_to_es, tokenizer=tokenizer,model=model, device=0)
+pipe = pipeline("translation_en_to_es", tokenizer=tokenizer,model=model, device=0)
 # Streamlit uygulamasının başlığını ayarlayın
 st.title("Opus-MT Çeviri")
 
