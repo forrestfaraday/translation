@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        repository: serdarildercaglar/translation
+        repository: forrestfaraday/translation
         ref: develop
 
     - name: Set up Python
